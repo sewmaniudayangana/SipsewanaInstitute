@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="731.0" prefWidth="1101.0" style="-fx-background-color: #c3e3e3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainPageController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="77.0" prefHeight="523.0" prefWidth="525.0" style="-fx-background-color: #4bb5b5;">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="80.0" prefHeight="47.0" prefWidth="169.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="10.0" layoutY="6.0" text="Student Id">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="143.0" prefHeight="47.0" prefWidth="169.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="10.0" layoutY="6.0" text="Name">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="264.0" prefHeight="47.0" prefWidth="169.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="10.0" layoutY="6.0" text="Address">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="325.0" prefHeight="47.0" prefWidth="169.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="10.0" layoutY="6.0" text="Contact">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="387.0" prefHeight="47.0" prefWidth="169.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="10.0" layoutY="6.0" text="Program">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="203.0" prefHeight="47.0" prefWidth="169.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="10.0" layoutY="6.0" text="D.O.B">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="203.0" layoutY="80.0" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="txtStudentId" layoutX="14.0" layoutY="9.0" prefHeight="31.0" prefWidth="275.0" promptText="S-0001">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="203.0" layoutY="203.0" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="txtdob" layoutX="14.0" layoutY="9.0" prefHeight="31.0" prefWidth="275.0" promptText="xxxxxx">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="203.0" layoutY="143.0" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="txtName" layoutX="14.0" layoutY="9.0" prefHeight="31.0" prefWidth="275.0" promptText="xxxxx">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="203.0" layoutY="264.0" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="txtAddress" layoutX="14.0" layoutY="9.0" prefHeight="31.0" prefWidth="275.0" promptText="xxxxxxxxxxxx">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="203.0" layoutY="325.0" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="txtContact" layoutX="14.0" layoutY="9.0" prefHeight="31.0" prefWidth="275.0" promptText="xxxxxxxxxx">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="203.0" layoutY="387.0" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: white;">
+               <children>
+                  <ComboBox fx:id="cmbProgram" layoutX="12.0" layoutY="8.0" prefHeight="31.0" prefWidth="275.0" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnSclear" layoutX="14.0" layoutY="464.0" mnemonicParsing="false" onAction="#studentClearOnAction" prefHeight="36.0" prefWidth="103.0" style="-fx-background-color: white;" text="Clear">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnSadd" layoutX="142.0" layoutY="464.0" mnemonicParsing="false" onAction="#studentAddOnAction" prefHeight="36.0" prefWidth="103.0" style="-fx-background-color: white;" text="Add">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnSupdate" layoutX="271.0" layoutY="464.0" mnemonicParsing="false" onAction="#studentUpdateOnAction" prefHeight="36.0" prefWidth="103.0" style="-fx-background-color: white;" text="Update">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnSdelete" layoutX="403.0" layoutY="464.0" mnemonicParsing="false" onAction="#studentDeleteOnAction" prefHeight="36.0" prefWidth="103.0" style="-fx-background-color: white;" text="Delete">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="47.0" prefWidth="169.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="10.0" layoutY="5.0" prefHeight="30.0" prefWidth="149.0" text="Register ID">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="203.0" layoutY="14.0" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="txtRegisterId" layoutX="12.0" layoutY="8.0" prefHeight="31.0" prefWidth="275.0" promptText="R-0001">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="557.0" layoutY="77.0" prefHeight="523.0" prefWidth="525.0" style="-fx-background-color: #4bb5b5;">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="35.0" prefHeight="47.0" prefWidth="169.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="10.0" layoutY="6.0" text="Program ID">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="98.0" prefHeight="47.0" prefWidth="169.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="10.0" layoutY="6.0" text=" Program">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="219.0" prefHeight="47.0" prefWidth="169.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="10.0" layoutY="6.0" text="Fee (LKR)">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="158.0" prefHeight="47.0" prefWidth="169.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="10.0" layoutY="6.0" text="Duration">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="203.0" layoutY="35.0" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="txtProgramId" layoutX="14.0" layoutY="9.0" prefHeight="31.0" prefWidth="275.0" promptText="P-001">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="203.0" layoutY="158.0" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="txtDuration" layoutX="14.0" layoutY="9.0" prefHeight="31.0" prefWidth="275.0" promptText="xxxxxx">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="203.0" layoutY="98.0" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="txtProgram" layoutX="14.0" layoutY="9.0" prefHeight="31.0" prefWidth="275.0" promptText="xxxxx">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="203.0" layoutY="219.0" prefHeight="47.0" prefWidth="303.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="txtFee" layoutX="14.0" layoutY="9.0" prefHeight="31.0" prefWidth="275.0" promptText="xxxx">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnPclear" layoutX="14.0" layoutY="464.0" mnemonicParsing="false" onAction="#programClearOnAction" prefHeight="36.0" prefWidth="103.0" style="-fx-background-color: white;" text="Clear">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnPadd" layoutX="142.0" layoutY="464.0" mnemonicParsing="false" onAction="#programAddOnAction" prefHeight="36.0" prefWidth="103.0" style="-fx-background-color: white;" text="Add">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnPupdate" layoutX="271.0" layoutY="464.0" mnemonicParsing="false" onAction="#programUpdateOnAction" prefHeight="36.0" prefWidth="103.0" style="-fx-background-color: white;" text="Update">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnPdelete" layoutX="403.0" layoutY="464.0" mnemonicParsing="false" onAction="#programDeleteOnAction" prefHeight="36.0" prefWidth="103.0" style="-fx-background-color: white;" text="Delete">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="-1.0" prefHeight="60.0" prefWidth="1101.0" style="-fx-background-color: #4bb5b5;">
+         <children>
+            <Label layoutX="25.0" layoutY="10.0" text="Student  Registration Form...">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" alignment="CENTER" layoutX="956.0" layoutY="9.0" prefHeight="44.0" prefWidth="136.0" text="2021-12-21">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" alignment="CENTER" layoutX="820.0" layoutY="9.0" prefHeight="44.0" prefWidth="136.0" text="7.34 AM">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnView" layoutX="979.0" layoutY="660.0" mnemonicParsing="false" onAction="#detailsOnAction" prefHeight="36.0" prefWidth="103.0" style="-fx-background-color: white;" text="View">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
